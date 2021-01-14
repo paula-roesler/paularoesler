@@ -1,4 +1,20 @@
 body {
-    background: hotpink;
+    font-family: 'Roboto', sans-serif;
+    font-size: 112,5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
+    line-height: 1.5; /* etwas größer als offiziell, von Jerryempfohlen */
 }
 
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+/* DESIGN-TIPP: 
+weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */ 
+a {
+    text-decoration: none;
+    border-bottom: 2px solid;
+} 
+
+input, button {
+    font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
+}
