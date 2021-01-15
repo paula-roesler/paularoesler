@@ -1,94 +1,143 @@
+/* PROFI-TIPP: Farben in CSS als Variablen anlegen */
+:root {
+  --color-white: #fcfcfc;
+  --color-black: #333333;
+}
+/* so wird es dann angewendet */
+.test {
+  color: var(--color-white);
+}
+/* Alternatives Beispiel für die Benennung: primary, secondary, highlight */
+/* PROFI-TIPP END --------------------------------- */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 93%;
-    margin: auto;
-    font-family: 'Roboto Slab', serif;
-    font-size: 112,5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
-    line-height: 1.5; /* etwas größer als offiziell, von Jerryempfohlen */
+  max-width: 93%;
+  margin: auto;
+  font-family: 'Roboto Slab', serif;
+  font-size: 112, 5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
+  line-height: 1.5; /* wird ohne Einheit gesetzt; 1,5 ist etwas größer als offiziell, von Jerry empfohlen */
+  background-color: #fcfcfc;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    font-family: 'Roboto Mono', monospace;
-    text-transform: lowercase;
-}
-
-h1, h2, h3 {
-    margin-top: 10%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: lowercase;
+  color: #333;
 }
 
 /* DESIGN-TIPP: 
-weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */ 
+weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */
 a {
-    text-decoration: none;
-    border-bottom: 2px solid;
-} 
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
 
 section {
-    max-width: 100%;
-    margin: auto;
-    align-items: center;
+  max-width: 100%;
+  margin: auto;
+  align-items: center;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-input, button {
-    font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
+input,
+button {
+  font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
 }
 
 /* --- START: HEADER --- */
-header {}
-
-header > h1, header > h2 {
-    margin-top: none !important;
+.title-header {
+  margin: 5px 0;
+}
+.subtitle-header {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-nav {
-    display: flex;
+.main-navigation {
+  display: flex;
 }
-nav a {
-    margin: 10px;
+.main-navigation a {
+  margin: 0 10px 10px 0;
+  border: 2px solid #555;
+  padding: 5px 7px;
+  color: #333;
+  font-family: Roboto Mono;
+  font-weight: 400;
 }
+
 /* --- END: HEADER --- */
 
 /* --- START: MAIN --- */
-main {}
 
-.skills-interest ul {
-    padding-left: 0;
+.skills-interests ul {
+  padding-left: 0;
 }
 
-.skills-interest li {
-    display: inline;
-    background-color: coral;
-    padding: 10px;
-    list-style: none;
+.skills-interests li {
+  display: inline-block;
+  background-color: grey;
+  color: #fcfcfc;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  list-style: none;
 }
 
-.contact {}
+.contact ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
 
+.contact li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  border: 2px solid #555;
+  padding: 5px 10px;
+  color: #333;
+  font-family: Roboto Mono;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.contact li a {
+  color: #333;
+  border-bottom: none;
+}
 
 .social {
-    display: grid;
+  display: grid;
 }
 
 .social li {
-    display: inline;
-    width: 35%;
-    background-color: turquoise;
-    padding: 15px;
-    border-bottom: none;
-    text-decoration: none;
-    list-style: none;
+  display: inline;
+  width: 35%;
+  background-color: turquoise;
+  padding: 15px;
+  border-bottom: none;
+  text-decoration: none;
+  list-style: none;
 }
 /* --- END: MAIN --- */
 
 /* --- END: FOOTER --- */
-footer {}
+footer {
+}
 /* --- END: FOOTER --- */
+
+/* -------------------------------- */
+/* --- MEDIA QUERIES ---- */
