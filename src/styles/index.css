@@ -1,11 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    max-width: 93%;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
     font-size: 112,5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
     line-height: 1.5; /* etwas größer als offiziell, von Jerryempfohlen */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: lowercase;
+}
+
+h1, h2, h3 {
+    margin-top: 10%;
 }
 
 /* DESIGN-TIPP: 
@@ -15,6 +27,56 @@ a {
     border-bottom: 2px solid;
 } 
 
+section {
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 input, button {
     font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
+}
+
+header {
+    background-color: rosybrown;
+}
+
+nav {
+    display: flex;
+    background-color: springgreen;
+    justify-content: center;
+}
+nav a {
+    color: steelblue;
+    background-color: tomato;
+    margin: 10px;
+}
+
+main {
+    background-color: tan;
+}
+
+footer {
+    background-color: teal;
+}
+
+
+.contact {
+    background-color: tomato;
+}
+
+.social {
+    display: grid;
+}
+.social a {
+    grid-column: 1/2;
+    background-color: turquoise;
+    margin-right: 40%;
+    margin: 2% 40% 2% 0;
+    padding: 15px;
 }
