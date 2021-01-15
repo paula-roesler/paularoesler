@@ -42,41 +42,53 @@ input, button {
     font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
 }
 
-header {
-    background-color: rosybrown;
+/* --- START: HEADER --- */
+header {}
+
+header > h1, header > h2 {
+    margin-top: none !important;
 }
 
 nav {
     display: flex;
-    background-color: springgreen;
-    justify-content: center;
 }
 nav a {
-    color: steelblue;
-    background-color: tomato;
     margin: 10px;
 }
+/* --- END: HEADER --- */
 
-main {
-    background-color: tan;
+/* --- START: MAIN --- */
+main {}
+
+.skills-interest ul {
+    padding-left: 0;
 }
 
-footer {
-    background-color: teal;
+.skills-interest li {
+    display: inline;
+    background-color: coral;
+    padding: 10px;
+    list-style: none;
 }
 
+.contact {}
 
-.contact {
-    background-color: tomato;
-}
 
 .social {
     display: grid;
 }
-.social a {
-    grid-column: 1/2;
+
+.social li {
+    display: inline;
+    width: 35%;
     background-color: turquoise;
-    margin-right: 40%;
-    margin: 2% 40% 2% 0;
     padding: 15px;
+    border-bottom: none;
+    text-decoration: none;
+    list-style: none;
 }
+/* --- END: MAIN --- */
+
+/* --- END: FOOTER --- */
+footer {}
+/* --- END: FOOTER --- */
