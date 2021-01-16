@@ -1,4 +1,4 @@
-/* PROFI-TIPP: Farben in CSS als Variablen anlegen */
+/* Farben in CSS als Variablen anlegen */
 :root {
   --color-white: #fcfcfc;
   --color-black: #333333;
@@ -15,16 +15,17 @@
 }
 
 body {
-  max-width: 93%;
+  padding: 3%;
   margin: auto;
   font-family: 'Overpass', sans-serif;
   letter-spacing: 0.1px;
   font-size: 112, 5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
   line-height: 1.6; /* wird ohne Einheit gesetzt; 1,5 ist etwas größer als offiziell, von Jerry empfohlen */
   background-color: #fcfcfc;
+  color: #333;
 }
 
-/* START: HEADLINES */
+/* --- HEADLINES --- */
 h1,
 h2,
 h3,
@@ -34,31 +35,25 @@ h6 {
   font-weight: 300;
   font-family: 'Overpass Mono', monospace;
   text-transform: lowercase;
-  color: #333;
 }
 
-h2 {
+/* h2 im Hauptteil der Site (Section-Überschriften) */
+main h2 {
   margin-top: 2em;
 }
 
+/* roter Hashtag vor den h2 Section-Überschriften */
 main h2::before {
   content: '#';
   color: tomato;
   margin-right: 5px;
 }
-/* END: HEADLINES */
+/* --- /HEADLINES --- */
 
-/* DESIGN-TIPP: 
-weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */
+/* TIPP: weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */
 a {
   text-decoration: none;
   border-bottom: 2px solid;
-}
-
-section {
-  max-width: 100%;
-  margin: auto;
-  align-items: center;
 }
 
 img {
@@ -72,12 +67,18 @@ button {
 }
 
 /* --- HEADER --- */
-.title h1 {
-  margin: 0;
+
+.header-pages {
+  margin-bottom: 19px;
 }
-.title h2 {
-  margin: 0;
-  font-size: 16px;
+.title h1 {
+  margin: 0 0 20px 0;
+  font-size: 25px;
+}
+.header-subtitle {
+  display: block;
+  font-size: 0.5em;
+  line-height: 0.5em;
 }
 
 .main-navigation {
@@ -97,11 +98,11 @@ button {
 
 /* --- MAIN --- */
 
-.about ul {
+.section-about ul {
   padding-left: 0;
 }
 
-.about li {
+.section-about li {
   display: inline-block;
   background-color: grey;
   color: #fcfcfc;
@@ -132,13 +133,13 @@ button {
   border-bottom: none;
 }
 
-.social-cards li {
+.social li {
   display: inline-block;
   text-decoration: none;
   list-style: none;
 }
 
-.social-cards img {
+.social img {
   padding: 15px;
   vertical-align: middle;
 }
@@ -164,31 +165,39 @@ button {
 /* ======================= */
 /* --- MEDIA QUERIES ---- */
 
-/* === 600px === */
+/* ===== 700px ===== */
 @media screen and (min-width: 600px) {
   body {
-    max-width: 600px;
+    max-width: 700px;
   }
 
-  .nav-pages {
+  /* Titel + Navigation */
+  .header-pages {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
-  .about {
+  /* Profilbild + Skills & Interests */
+  .section-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
-  .social-cards {
+  /* Kontaktdetails + Social */
+
+  .social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
   }
 
+  /* Biography + CV */
   .bio {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 }
