@@ -17,12 +17,14 @@
 body {
   max-width: 93%;
   margin: auto;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 0.1px;
   font-size: 112, 5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
-  line-height: 1.5; /* wird ohne Einheit gesetzt; 1,5 ist etwas größer als offiziell, von Jerry empfohlen */
+  line-height: 1.6; /* wird ohne Einheit gesetzt; 1,5 ist etwas größer als offiziell, von Jerry empfohlen */
   background-color: #fcfcfc;
 }
 
+/* START: HEADLINES */
 h1,
 h2,
 h3,
@@ -30,10 +32,21 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Overpass Mono', monospace;
   text-transform: lowercase;
   color: #333;
 }
+
+h2 {
+  margin-top: 2em;
+}
+
+main h2::before {
+  content: '#';
+  color: tomato;
+  margin-right: 5px;
+}
+/* END: HEADLINES */
 
 /* DESIGN-TIPP: 
 weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */
@@ -58,37 +71,37 @@ button {
   font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
 }
 
-/* --- START: HEADER --- */
-.title-header {
-  margin: 5px 0;
+/* --- HEADER --- */
+.title h1 {
+  margin: 0;
 }
-.subtitle-header {
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
+.title h2 {
+  margin: 0;
   font-size: 16px;
 }
 
 .main-navigation {
   display: flex;
 }
+
 .main-navigation a {
   margin: 0 10px 10px 0;
   border: 2px solid #555;
   padding: 5px 7px;
   color: #333;
-  font-family: Roboto Mono;
+  font-family: 'Overpass Mono', monospace;
   font-weight: 400;
 }
 
-/* --- END: HEADER --- */
+/* --- /HEADER --- */
 
-/* --- START: MAIN --- */
+/* --- MAIN --- */
 
-.skills-interests ul {
+.about ul {
   padding-left: 0;
 }
 
-.skills-interests li {
+.about li {
   display: inline-block;
   background-color: grey;
   color: #fcfcfc;
@@ -109,7 +122,7 @@ button {
   border: 2px solid #555;
   padding: 5px 10px;
   color: #333;
-  font-family: Roboto Mono;
+  font-family: 'Overpass Mono', monospace;
   font-weight: 400;
   text-transform: lowercase;
 }
@@ -119,25 +132,63 @@ button {
   border-bottom: none;
 }
 
-.social {
-  display: grid;
-}
-
-.social li {
-  display: inline;
-  width: 35%;
-  background-color: turquoise;
-  padding: 15px;
-  border-bottom: none;
+.social-cards li {
+  display: inline-block;
   text-decoration: none;
   list-style: none;
 }
-/* --- END: MAIN --- */
 
-/* --- END: FOOTER --- */
-footer {
+.social-cards img {
+  padding: 15px;
+  vertical-align: middle;
 }
-/* --- END: FOOTER --- */
 
-/* -------------------------------- */
+.hashtag {
+  color: tomato;
+  margin-right: 7px;
+}
+
+.bio h4 {
+  margin-bottom: 0;
+}
+/* --- /MAIN --- */
+
+/* --- FOOTER --- */
+.copyright {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 15px;
+}
+/* --- /FOOTER --- */
+
+/* ======================= */
 /* --- MEDIA QUERIES ---- */
+
+/* === 600px === */
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 600px;
+  }
+
+  .nav-pages {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+  }
+
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
