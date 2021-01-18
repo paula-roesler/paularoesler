@@ -1,0 +1,21 @@
+.section-about ul {
+  padding-left: 0;
+}
+
+.section-about li {
+  display: inline-block;
+  background-color: grey;
+  color: #fcfcfc;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  /* Profilbild + Skills & Interests */
+  .section-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}

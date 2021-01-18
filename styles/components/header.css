@@ -1,3 +1,36 @@
-/*
-Hier kommen alle css für den header rein
-*/
+.header-pages {
+  margin-bottom: 19px;
+}
+
+@media screen and (min-width: 700px) {
+  /* Titel + Navigation */
+  .header-pages {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.title h1 {
+  margin: 0 0 20px 0;
+  font-size: 25px;
+}
+.header-subtitle {
+  display: block;
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.main-navigation a {
+  margin: 0 10px 10px 0;
+  border: 2px solid #555;
+  padding: 5px 7px;
+  color: #333;
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 400;
+}

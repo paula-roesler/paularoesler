@@ -1,0 +1,14 @@
+main h2 {
+  margin-top: 2em;
+}
+
+main h2::before {
+  content: '#';
+  color: tomato;
+  margin-right: 5px;
+}
+
+.hashtag {
+  color: tomato;
+  margin-right: 7px;
+}
