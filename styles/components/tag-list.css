@@ -1,0 +1,13 @@
+.tag-list {
+  padding-left: 0;
+}
+
+/* direct child elements */
+.tag-list > li {
+  display: inline-block;
+  background-color: grey;
+  color: #fcfcfc;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  list-style: none;
+}

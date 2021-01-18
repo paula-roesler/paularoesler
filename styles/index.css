@@ -1,9 +1,15 @@
 @import '_variables.css';
 @import '_base.css';
 @import '_utility.css';
-@import 'components/header.css';
-@import 'components/main.css';
 @import 'components/about.css';
 @import 'components/biography.css';
 @import 'components/contact.css';
 @import 'components/footer.css';
+@import 'components/main.css';
+@import 'components/page-header.css';
+@import 'components/tag-list.css';
+
+/*
+cmd + shift + p = search menu
+e.g. sorting lines ascending and descending
+*

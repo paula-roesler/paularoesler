@@ -1,10 +1,10 @@
-.header-pages {
+.page-header {
   margin-bottom: 19px;
 }
 
 @media screen and (min-width: 700px) {
   /* Titel + Navigation */
-  .header-pages {
+  .page-header {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -16,17 +16,18 @@
   margin: 0 0 20px 0;
   font-size: 25px;
 }
-.header-subtitle {
+
+.page-header-subtitle {
   display: block;
   font-size: 0.5em;
   line-height: 0.5em;
 }
 
-.main-navigation {
+.page-header-navigation {
   display: flex;
 }
 
-.main-navigation a {
+.page-header-navigation a {
   margin: 0 10px 10px 0;
   border: 2px solid #555;
   padding: 5px 7px;

@@ -31,11 +31,6 @@ a {
   border-bottom: 2px solid;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 input,
 button {
   font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
