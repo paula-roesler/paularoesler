@@ -3,7 +3,7 @@
   margin-bottom: 0;
 }
 .copyright {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #333333;
+  color: #fcfcfc;
   padding: 15px;
 }
