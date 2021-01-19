@@ -1,3 +1,5 @@
-.no-margin {
-  margin-top: 0;
+@media (min-width: 700px) {
+  .no-margin {
+    margin-top: 0;
+  }
 }

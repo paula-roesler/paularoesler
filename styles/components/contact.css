@@ -19,22 +19,3 @@
   color: #333;
   border-bottom: none;
 }
-
-.contact-social > li a {
-  display: inline-block;
-  border-bottom: none;
-}
-
-.contact-social img {
-  padding: 15px;
-  vertical-align: middle;
-  max-width: 70%;
-}
-
-@media screen and (min-width: 700px) {
-  .contact-social {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: stretch;
-  }
-}
