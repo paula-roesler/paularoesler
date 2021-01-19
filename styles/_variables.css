@@ -1,0 +1,12 @@
+/* Farben in CSS als Variablen anlegen */
+: root {
+  --color-white: #fcfcfc;
+  --color-black: #333333;
+}
+/* so wird es dann angewendet */
+.test {
+  color: var(--color-white);
+}
+
+/* Alternatives Beispiel für die Benennung: primary, secondary, highlight */
+/* PROFI-TIPP END --------------------------------- */

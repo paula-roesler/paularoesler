@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 0.1px;
+  font-size: 112, 5%; /* bei Voreinstellung des Browsers von 16px würden sich hier 18px ergeben */
+  line-height: 1.6; /* wird ohne Einheit gesetzt; 1,5 ist etwas größer als offiziell, von Jerry empfohlen */
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  font-family: 'Overpass Mono', monospace;
+  text-transform: lowercase;
+}
+
+/* TIPP: weil Linien unter den Links idR nicht ganz durchgezogen werden besonders Typographen und Designer finden das wichtig */
+a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+input,
+button {
+  font-size: 1em; /* em bezieht sich immer auf die aktuell vorherrschende Schriftgröße */
+}

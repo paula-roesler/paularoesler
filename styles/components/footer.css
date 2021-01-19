@@ -1,0 +1,9 @@
+.page-footer {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.copyright {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 15px;
+}

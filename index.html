@@ -11,37 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Overpass&family=Overpass+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Personal Website Paula Rösler</title>
+    <title>Paula Rösler • Design & Webdevelopment</title>
   </head>
-
   <body>
-    <header class="header-pages">
-      <section class="title">
+    <header class="page-header">
+      <section class="page-header-title">
         <h1>
-          Paula Rösler
+          Paula Rösler <<<<<<< HEAD
           <span class="header-subtitle">Design &amp; Webdevelopment test </span>
+          =======
+          <span class="page-header-subtitle">Design & Webdevelopment</span>
+          >>>>>>> split-css
         </h1>
       </section>
-      <nav class="main-navigation">
+      <nav class="page-header-navigation">
         <a href="#contact">contact</a>
         <a href="#bio">biography</a>
       </nav>
     </header>
     <main>
-      <section class="section-about">
+      <section class="about">
+        <img
+          class="about-img"
+          src="images/Profilbild-Paula-Roesler.jpg"
+          width="300"
+          height="400"
+          alt=""
+        />
         <div>
-          <img
-            src="images/Profilbild-Paula-Roesler.jpg"
-            width="300"
-            height="400"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2>Skills &amp; Interests</h2>
-          <ul>
+          <h2 class="no-margin">Design for everyone</h2>
+          <p>
+            Als studierte Designerin begeistert mich die Gestaltung digitaler
+            Produkte. Dabei steht immer der Mensch und sein Nutzen im Fokus.
+            Mich begeistert einfaches Design, klare Konzepte und leichte
+            Bedienbarkeit.
+          </p>
+          <h2>Skills & Interests</h2>
+          <ul class="tag-list">
             <li>Design</li>
             <li>Webdesign</li>
+            <li>UI &amp; UX</li>
+            <li>Accessibility</li>
             <li>WordPress</li>
             <li>Golf</li>
             <li>Natur &amp; Reisen</li>
@@ -53,32 +63,17 @@
       </section>
       <section id="contact" class="contact">
         <h2>Get in touch</h2>
-        <ul>
+        <ul class="contact-list">
           <li>mobile: <a href="tel:+49 151 54256364">+49 151 54256364</a></li>
           <li>
             mail:
             <a href="mailto:paularoesler@icloud.com">paularoesler@icloud.com</a>
           </li>
-          <li><a href="https://github.com/pa-ro">Github</a></li>
+          <li>
+            <a href="https://github.com/paula-roesler">Github</a>
+          </li>
           <li><a href="https://codepen.io/your-work">Codepen</a></li>
           <li><a href="https://de.linkedin.com/">LinkedIn</a></li>
-        </ul>
-        <ul class="social">
-          <li>
-            <a href="https://github.com/pa-ro">
-              <img src="images/GitHub_logo_2013.svg.png" alt="GitHub" />
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/your-work">
-              <img src="images/Logo-Codepen.png" alt="CodePen" />
-            </a>
-          </li>
-          <li>
-            <a href="https://de.linkedin.com/">
-              <img src="images/1280px-LinkedIn_Logo.svg.png" alt="LinkedIn" />
-            </a>
-          </li>
         </ul>
       </section>
       <section id="bio" class="bio">
@@ -129,7 +124,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-pages">
+    <footer class="page-footer">
       <section class="copyright">©2021 Paula Rösler</section>
     </footer>
   </body>

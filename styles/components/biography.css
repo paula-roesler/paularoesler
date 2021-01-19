@@ -1,0 +1,11 @@
+.bio h4 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 700px) {
+  /* Biography + CV */
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
